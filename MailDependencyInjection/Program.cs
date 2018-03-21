@@ -101,8 +101,8 @@ namespace MailDependencyInjection
     {
         static void Main(string[] args)
         {
-            var mailService = new MailService(new EventLogger(), new GoogleFAI(),"smatti.sofian@gmail.com","69ay9vtmarcel@antihack");
-            mailService.SendEmail("smatti.sofian@free.fr","smatti.sofian@gmail.com", "Essai", "Sucessful");
+            var mailService = new MailService(new EventLogger(), new GoogleFAI(),"yourmail@gmail.com","password");
+            mailService.SendEmail("mailto@free.fr","mailfrom@gmail.com", "Essai", "Sucessful");
         }
     }
 }

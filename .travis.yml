@@ -1,14 +1,15 @@
 language: csharp
-solution: MailDependenciyInjection.sln
+solution: MailDependencyInjection.sln
 
 matrix:
   include:
-    - dotnet: 2.1.502
-      mono: none
-      env: DOTNETCORE=2  # optional, can be used to take different code paths in your script
+    #- dotnet: 2.1.502
+    #  mono: none
+    #  env: DOTNETCORE=2  # optional, can be used to take different code paths in your script
     - mono: latest
 
 install:
-  - dotnet restore MailDependenciyInjection.sln
+  - nuget restore MailDependencyInjection.sln
+  
 script:
-  - msbuild /p:Configuration=Release MailDependenciyInjection.sln
+  - msbuild /p:Configuration=Release MailDependencyInjection.sln

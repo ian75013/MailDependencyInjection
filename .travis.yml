@@ -9,6 +9,6 @@ matrix:
     - mono: latest
 
 install:
-  - nuget restore MailDependenciyInjection.sln
+  - dotnet restore MailDependenciyInjection.sln
 script:
   - msbuild /p:Configuration=Release MailDependenciyInjection.sln

@@ -20,7 +20,7 @@ if: PROJ=Mono
 if: PROJ=Core
 
   install:
-    - dotnet restore MailDependencyInjection
+    - dotnet restore 
 
   script:
     - dotnet build

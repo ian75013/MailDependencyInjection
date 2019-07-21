@@ -4,9 +4,23 @@ solution: MailDependencyInjection.sln
 matrix:
   include:
     - mono: latest
+      env: PROJ=Mono
+    - dotnet: 2.1.502
+      mono: none
+      env: PROJ=Core
 
-install:
-  - nuget restore MailDependencyInjection.sln
+if: PROJ=Mono
 
-script:
-  - msbuild /p:Configuration=Release MailDependencyInjection.sln
+  install:
+    - nuget restore MailDependencyInjection.sln
+
+  script:
+    - msbuild /p:Configuration=Release MailDependencyInjection.sln
+
+if: PROJ=Core
+
+  install:
+    - dotnet restore MailDependencyInjection
+
+  script:
+    - dotnet build

@@ -9,12 +9,8 @@ matrix:
       mono: none
       env: PROJ=Core
   install:
-    if: PROJ=Mono 
       - nuget restore MailDependencyInjection.sln
-    if: PROJ=Core
       - dotnet restore
   script:
-    if: PROJ=Mono
       - msbuild /p:Configuration=Release MailDependencyInjection.sln
-    if: PROJ=Core
-    - dotnet build
+      - dotnet build

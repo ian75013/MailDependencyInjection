@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailDependencyInjection", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MailDependencyInjection", "MailDependencyInjection", "{9FA08C66-6611-4E27-B628-F375B0A13128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailDependencyInjectionCore", "MailDependencyInjection\MailDependencyInjectionCore\MailDependencyInjectionCore.csproj", "{FAFF254E-16E0-4479-AC08-8CB4FAE7B323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailDependencyInjectionCore", "MailDependencyInjection\MailDependencyInjectionCore\MailDependencyInjectionCore.csproj", "{FAFF254E-16E0-4479-AC08-8CB4FAE7B323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +29,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {368FBB6A-1BDB-4F5B-B91D-AC25DFC2B4BF}
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{FAFF254E-16E0-4479-AC08-8CB4FAE7B323} = {9FA08C66-6611-4E27-B628-F375B0A13128}
 	EndGlobalSection
 EndGlobal
